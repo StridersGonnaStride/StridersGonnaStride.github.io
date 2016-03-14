@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <body>
 <div id="time>
-
 </div>
 </body>
 <script>
@@ -15,7 +14,13 @@
             h = checkTime(today.getHours()),
             m = checkTime(today.getMinutes()),
             s = checkTime(today.getSeconds());
-        document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+if (h > 12) {
+            rh = h - 12;
+}
+if (h < 12) {
+            rh = h
+}
+        document.getElementById('time').innerHTML = rh + ":" + m + ":" + s;
         t = setTimeout(function () {
             startTime()
         }, 1);
