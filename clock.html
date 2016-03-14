@@ -21,7 +21,16 @@ if (h > 12) {
 if (h < 12) {
             rh = h
 }
-        document.getElementById('time').innerHTML = rh + ":" + m + ":" + s;
+var hm = rh + ":" + m;
+if (h < 12) {
+var ampm = AM
+}
+if (h > 12) {
+var ampm = PM
+}
+
+        document.getElementById('time').innerHTML = rh + ":" + m + ":" + s + ampm;
+        document.getElementById('time').innerHTML = hm + ampm;
         t = setTimeout(function () {
             startTime()
         }, 1);
