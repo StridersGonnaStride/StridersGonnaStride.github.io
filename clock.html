@@ -31,11 +31,11 @@ var ampm = "AM";
 if (h > 12) {
 var ampm = "PM";
 }
-        document.getElementById('time').innerHTML = rh + ":" + m + ":" + s + " " + ampm;
-        document.getElementById('time1').innerHTML = hm + " " + ampm;
-        document.getElementById('time2').innerHTML = hm + " " + ampm;
-        document.getElementById('time3').innerHTML = s;
-        document.getElementByTagName('title').innerHTML = hm + s + "Clock | Eric"
+        document.getElementsById('time').innerHTML = rh + ":" + m + ":" + s + " " + ampm;
+        document.getElementsById('time1').innerHTML = hm + " " + ampm;
+        document.getElementsById('time2').innerHTML = hm + " " + ampm;
+        document.getElementsById('time3').innerHTML = s;
+        document.getElementsById('title').innerHTML = hm + s + "Clock | Eric"
         t = setTimeout(function () {
             startTime()
         }, 1);
