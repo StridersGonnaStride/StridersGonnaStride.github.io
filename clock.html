@@ -13,36 +13,19 @@
     function checkTime(i) {
         return (i < 10) ? "0" + i : i;
     }
+
     function startTime() {
         var today = new Date(),
             h = checkTime(today.getHours()),
             m = checkTime(today.getMinutes()),
             s = checkTime(today.getSeconds());
-if (h > 12) {
-            rh = h - 12;
-}
-if (h < 12) {
-            rh = h
-}
-var hm = rh + ":" + m;
-if (h < 12) {
-var ampm = "AM";
-}
-if (h > 12) {
-var ampm = "PM";
-}
-        document.getElementById('time').innerHTML = rh + ":" + m + ":" + s + " " + ampm;
-        document.getElementById('time1').innerHTML = hm + " " + ampm;
-        document.getElementById('time2').innerHTML = hm + " " + ampm;
-        document.getElementById('time3').innerHTML = s;
-        document.title = hm + ":" + s + " Clock | Eric"
+        document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
         t = setTimeout(function () {
             startTime()
-        }, 1);
+        }, 500);
     }
     startTime();
-})();
-</script>
+})();</script>
 <style>
 body {
 text-align: center;
