@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <title>Clock | Eric</title>
 <body>
 <div id="time"></div>
@@ -7,19 +7,17 @@
 <div id="time2"></div>
 <div id="time3"></div>
 </div>
-<div id="clock">
-<div id="hrs">
-<input id="bar1"/>
-<input id="bar2"/>
-<input id="bar3"/>
-<input id="bar4"/>
-<input id="bar5"/>
-<input id="bar6"/>
-<input id="bar7"/>
-<input id="bar8"/>
-<input id="bar9"/>
-</div>
-<input id="bar10"/>
+<div clock>
+<input/>
+<input/>
+<input/>
+<input/>
+<input/>
+<input/>
+<input/>
+<input/>
+<input/>
+<input/>
 
 </div>
 </body>
@@ -28,7 +26,6 @@
     function checkTime(i) {
         return (i < 10) ? "0" + i : i;
     }
-
     function startTime() {
         var today = new Date(),
             h = checkTime(today.getHours()),
@@ -47,7 +44,6 @@ var ampm = "AM";
 if (h > 12) {
 var ampm = "PM";
 }
-
         document.getElementById('time').innerHTML = rh + ":" + m + ":" + s + " " + ampm;
         document.getElementById('time1').innerHTML = hm + " " + ampm;
         document.getElementById('time2').innerHTML = hm + " " + ampm;
@@ -66,9 +62,5 @@ margins: 1024px 768px 1024px 768px;
 background-color: black;
 color: lime;
 font-size: 30px;
-}
-.bar1 {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
 }
 </style>
