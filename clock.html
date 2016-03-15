@@ -35,7 +35,7 @@ var ampm = "PM";
         document.getElementById('time1').innerHTML = hm + " " + ampm;
         document.getElementById('time2').innerHTML = hm + " " + ampm;
         document.getElementById('time3').innerHTML = s;
-        document.getElementById('title').innerHTML = hm + s + "Clock | Eric"
+        document.getElementByTagName('title').innerHTML = hm + s + "Clock | Eric"
         t = setTimeout(function () {
             startTime()
         }, 1);
