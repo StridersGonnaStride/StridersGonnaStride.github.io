@@ -7,17 +7,19 @@
 <div id="time2"></div>
 <div id="time3"></div>
 </div>
-<div clock>
-<input/>
-<input/>
-<input/>
-<input/>
-<input/>
-<input/>
-<input/>
-<input/>
-<input/>
-<input/>
+<div id="clock">
+<div id="hrs">
+<input id="bar1"/>
+<input id="bar2"/>
+<input id="bar3"/>
+<input id="bar4"/>
+<input id="bar5"/>
+<input id="bar6"/>
+<input id="bar7"/>
+<input id="bar8"/>
+<input id="bar9"/>
+</div>
+<input id="bar10/>
 
 </div>
 </body>
@@ -64,5 +66,9 @@ margins: 1024px 768px 1024px 768px;
 background-color: black;
 color: lime;
 font-size: 30px;
+}
+.bar1,.bar2,.bar3,.bar7,.bar8 {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 </style>
