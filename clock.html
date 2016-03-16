@@ -3,10 +3,9 @@
 <body onload="startTime()">
 <div id="time"></div>
 <div id="time1"></div>
-<div id="clock">
 <div id="time2"></div>
 <div id="time3"></div>
-</div>
+
 
 <script>
 (function () {
@@ -29,6 +28,7 @@ var ampm = " PM"
 }
         document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
 document.getElementById('time1').innerHTML = th + ":" + m + ":" + s + " " + ampm;
+document.getElementById('time2').innerHTML = th + ":" + m + ampm + "and " + s + "seconds";
         t = setTimeout(function () {
             startTime()
         }, 500);
