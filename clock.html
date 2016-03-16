@@ -17,16 +17,16 @@
         var today = new Date(),
             h = checkTime(today.getHours()),
             m = checkTime(today.getMinutes()),
-            s = checkTime(today.getSeconds()),
+            s = checkTime(today.getSeconds());
 
 
 if (h < 12) {
 var th = h,
-var ampm = " AM";
+ampm = " AM";
 }
 if (h > 12) {
 var th = h - 12,
-var ampm = " PM";
+ampm = " PM";
 }
         document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
 document.getElementById('time1').innerHTML = th + ":" + m + ":" + s + " " + ampm;
