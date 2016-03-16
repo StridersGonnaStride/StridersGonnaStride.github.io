@@ -68,12 +68,15 @@ color: lime;
 font-size: 30px;
 }
 .bar1 {
+
+    -ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
     background-color: lime;
-    -webkit-animation: mymove 5s 0.5; /* Chrome, Safari, Opera */
+    -webkit-animation: mymove 5s 0.5; 
     animation: mymove 5s 0.5;
 }
 
-/* Chrome, Safari, Opera */
+
 @-webkit-keyframes mymove {
     50% {-webkit-transform: rotate(90deg);}
 }
