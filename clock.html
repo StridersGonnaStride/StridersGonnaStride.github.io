@@ -21,11 +21,11 @@
             s = checkTime(today.getSeconds());
 if (h < 12) {
 var th = h
-var ampm = "AM"
+var ampm = " AM"
 }
 if (h > 12) {
 var th = h - 12
-var ampm = "PM"
+var ampm = " PM"
 }
         document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
 document.getElementById('time1').innerHTML = th + ":" + m + ":" + s + " " + ampm;
