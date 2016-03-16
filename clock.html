@@ -18,7 +18,7 @@
             h = checkTime(today.getHours()),
             m = checkTime(today.getMinutes()),
             s = checkTime(today.getSeconds()),
-var d = new Date();
+
 if (h < 12) {
 var th = h,
 var ampm = " AM";
@@ -30,7 +30,7 @@ var ampm = " PM";
         document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
 document.getElementById('time1').innerHTML = th + ":" + m + ":" + s + " " + ampm;
 document.getElementById('time2').innerHTML = th + ":" + m + ampm + " and " + s + " seconds";
-document,getElementbyId('time3').innerHTML = d
+document,getElementbyId('time3').innerHTML = today
         t = setTimeout(function () {
             startTime()
         }, 500);
