@@ -20,12 +20,12 @@
             m = checkTime(today.getMinutes()),
             s = checkTime(today.getSeconds());
 if (h < 12) {
-12h = h
-ampm = "AM"
+var 12h = h
+var ampm = "AM"
 }
 if (h > 12) {
-12h = h - 12
-ampm = "PM"
+var 12h = h - 12
+var ampm = "PM"
 }
         document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
 document.getElementById('time1').innerHTML = 12h + ":" + m + ":" + s + ampm;
