@@ -68,7 +68,19 @@ color: lime;
 font-size: 30px;
 }
 .bar1 {
+    background-color: lime;
+    -webkit-animation: mymove 5s 0.5; /* Chrome, Safari, Opera */
+    animation: mymove 5s 0.5;
+}
 
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {-webkit-transform: rotate(90deg);}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {transform: rotate(90deg);}
 }
 </style>
 </body>
