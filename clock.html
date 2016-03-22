@@ -21,14 +21,11 @@
     function checkTime(i) {
         return (i < 10) ? "0" + i : i;
     }
-
     function startTime() {
         var today = new Date(),
             h = checkTime(today.getHours()),
             m = checkTime(today.getMinutes()),
             s = checkTime(today.getSeconds());
-
-
 if (h < 12) {
 var th = h,
 ampm = " AM";
@@ -41,7 +38,6 @@ ampm = " PM";
 document.getElementById('time1').innerHTML = th + ":" + m + ":" + s + " " + ampm;
 document.getElementById('time2').innerHTML = th + ":" + m + ampm + " and " + s + " seconds";
 document.title =  th + ':' + m + ':' + s + ampm + ' | Time | Eric';
-
         t = setTimeout(function () {
             startTime()
         }, 500);
@@ -57,7 +53,6 @@ color: lime;
 font-size: 30px;
 }
 #clockh1 {
-
 }
 </style>
 </body>
