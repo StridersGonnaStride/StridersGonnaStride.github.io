@@ -1,3 +1,3 @@
-# striderwebapps
-Web apps that I create.
+# Eric Duree
+See description.
 
