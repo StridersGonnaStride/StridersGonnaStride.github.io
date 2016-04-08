@@ -1,0 +1,11 @@
+<body>
+  <div class="ui sidebar">
+    ...
+  </div>
+  <div class="ui top fixed menu">
+    ...
+  </div>
+  <div class="pusher">
+    Your site's actual content
+  </div>
+</body>
