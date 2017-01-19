@@ -2,6 +2,7 @@
 
 
 .hellobox {
-  
+  text-align: center;
+  font-family: impact;
   background: url("03-spitzer-w5nebula.jpg");
 }
