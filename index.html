@@ -28,7 +28,30 @@
 h1,h2 {
   text-align: center;
   font-family: impact;
-  background: url('eric/Pictures/03-spitzer-w5nebula.jpg') 0 0 repeat-x;
+}
+h1{
+    background: url('eric/Pictures/03-spitzer-w5nebula.jpg') 0 0 repeat-x;
+    position:relative;
+    display: inline-block;
+    margin:0 25px;
+    padding:0 10px;
+    height:40px;
+}
+
+h1:before,h1:after {
+    content:'';
+    display: inline-block;
+    position:absolute;
+    top: 0;
+    right: -20px;
+    width: 20px;
+    height: 100%;
+    background:inherit;
+    background-position:100% 100%;
+}
+h1:before {
+    left:-20px;
+    background-position: 0 100%;
 }
 </style>
 
