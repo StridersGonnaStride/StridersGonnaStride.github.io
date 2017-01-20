@@ -3,6 +3,7 @@ h1,h2 {
   font-family: impact;
   }
 body {
-    background: url("eric/Pictures/1_nasaspacescapes_0011_12.jpg") no-repeat center center;
+    background: url("~!file!eric/Pictures/1_nasaspacescapes_0011_12.jpg") no-repeat center center;
     background-size: cover; 
+    color: white;
   }
